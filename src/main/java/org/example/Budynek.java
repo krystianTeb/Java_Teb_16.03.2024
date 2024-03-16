@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Budynek implements IObslugaBudynku {
-    private int iloscPokoi;
-    private String adres;
-    private int liczbaPieter;
-    private int wartoscNieruchomosci;
-    private List<Osoba> listaMieszkancow = new ArrayList<Osoba>() ;
+    protected int iloscPokoi;
+    protected String adres;
+    protected int liczbaPieter;
+    protected int wartoscNieruchomosci;
+    protected List<Osoba> listaMieszkancow = new ArrayList<Osoba>() ;
 
     public Budynek(int iloscPokoi, String adres, int liczbaPieter, int wartoscNieruchomosci) {
         this.iloscPokoi = iloscPokoi;
