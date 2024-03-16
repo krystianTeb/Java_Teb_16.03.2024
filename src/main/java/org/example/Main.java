@@ -2,12 +2,12 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        int liczba = 5;
-        Dom dom1 = new Dom(8, "Ul. Morska 120/1 Gdynia 00-000", 4, 4_000_000, 1_000);
-        dom1.DodajMieszkanca(
-                PobieranieKonsoloweMieszkanca.PobieranieDanychNowegoMieszkanca()
-        );
+        Pracownik pracownik1 = new Pracownik("Adam", "Kowalski", EDzial.IT);
+        System.out.println("Imię: " + pracownik1.getImie() + "\nNazwisko: " + pracownik1.getNazwisko() +
+                            "\nDział: " + pracownik1.getDzial());
 
-        dom1.WyswietlDaneBudynku();
+        pracownik1.setDzial(EDzial.KSIEGOWOSC);//Seter ustawia wartość w danym polu
+        System.out.println("Nowy dział to: " + pracownik1.getDzial());//Getter pobiera zawartość
+
     }
 }
